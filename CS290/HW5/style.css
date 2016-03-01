@@ -1,0 +1,147 @@
+/****************************************
+  TAoPM
+****************************************/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+	height: 100%;
+	width: 100%;
+    display: block;
+}
+
+::-moz-selection { color: #333; text-shadow: none; }
+::selection {  color: #333; text-shadow: none; }
+.clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clear { display: inline-table; clear: both; }
+/* Hides from IE-mac \*/ * html .clear { height: 1%; } .clear { display: block; } /* End hide from IE-mac */
+
+/****************************************
+  ==== LAYOUT
+****************************************/
+
+html, body {
+	background-image: url(images/blueHexagons.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	
+	width: 100%;
+    height: 100%;
+
+}
+
+p.header, p.footer { }
+div.logo { width: 204px; height: 38px; float: left; background: url(logo.png) 0 0 no-repeat; position: relative; z-index: 10; }
+div.title { height: 38px; line-height: 38px; padding: 0 10px; margin: 0 1px 0 0; float: right; color: #333; text-align: right; font-size: 18px; position: relative; z-index: 10; }
+.template-wrap {margin-right: auto; margin-left: auto;  top: 50%; left: 50%;  }
+.template-wrap canvas { margin-right: auto; margin-left: auto; z-index: 9; box-shadow: 10px 10px 5px black; -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.fullscreen { float: right; position: relative; z-index: 10; }
+
+body.template { }
+.template .template-wrap { }
+.template .template-wrap canvas { }
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+	
+}
+#header {
+	background-color: #028CC5;
+	padding:10px;
+	width: 100%;
+}
+#imageBar {
+	background-color: grey;
+	width:100%;
+	height:300px;
+}
+#content {
+	background-color: white;
+	height:1000px;
+	padding-bottom:50px; /* Height of the footer element */
+}
+#content2 {
+	height:auto;
+	padding-bottom:50px; /* Height of the footer element */
+	clear: both;
+	background-color: white;
+	margin-right: 20%; 
+	margin-left: 20%;
+}
+#footer {
+	background-color: #adad85;
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align: center;
+}
+
+.nav{
+	background-color: #66c0ff;
+	padding: 10px;
+}
+	
+h1.mainTitle {
+	color: white;
+	margin-left: 20px;
+	font-family: blackOps;
+	font-size: 500%;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.inlineHeader {
+	display: inline;
+}
+
+@font-face {
+    font-family: blackOps;
+    src: url(../../../fonts/BLACKOPSONE-REGULAR.woff) format('truetype');
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.star-rating{
+	width:300%; /* you can use % */
+    height: auto;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+table.comment {
+	width: 75%;
+}
+
+table.comment th {
+	padding: 10px;
+	border-top-style: groove;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+	
+}
+
+table.comment td {
+	border-radius: 15px 50px;
+    background: #028CC5;
+    padding: 20px; 
+    width: auto;
+    height: auto;
+	color: white;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+
